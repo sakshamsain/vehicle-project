@@ -56,6 +56,7 @@ class MongoDBClient:
             # Use the shared MongoClient for this instance
             self.client = MongoDBClient.client
             self.database = self.client[database_name]  # Connect to the specified database
+         
             self.database_name = database_name
             logging.info("MongoDB connection successful.")
             

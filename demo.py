@@ -22,6 +22,7 @@
 
 # --------------------------------------------------------------------------------
 
-# from src.logger import logging
+from src.pipline.training_pipeline import TrainPipeline
 
-# logging.debug("this is a debug message")
+pipline = TrainPipeline()
+pipline.run_pipeline()
